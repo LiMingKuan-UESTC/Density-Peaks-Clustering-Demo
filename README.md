@@ -10,7 +10,7 @@
 
 ## 效果展示
 
-gif演示待补充
+![Density Peaks Clustering MATLAB Demo](assets/display.gif)
 
 ---
 
@@ -161,8 +161,6 @@ gamma = rho .* delta;
 * [ ] 增加最终聚类结果与真实标签的对比展示
 * [ ] 拆分算法模块与 GUI 模块，方便单独调用
 * [ ] 在功能稳定后发布第一个版本标签，例如 `v0.1.0`
-
----
 
 ## License
 
