@@ -1,10 +1,16 @@
-# Density-Peaks-Clustering-Demo
+<h1 align="center">Density-Peaks-Clustering-Demo</h1>
 
-一个面向算法教学与课程实验的 MATLAB 密度峰值聚类可视化 Demo，通过局部密度、相对距离、决策图、聚类中心选择和样本逐步分配，直观呈现 Density Peaks Clustering（DPC）的完整执行过程。
+<p align="center">
+  <b>一个密度峰值聚类可视化 Demo，通过局部密度、相对距离、决策图、聚类中心选择和样本逐步分配，直观呈现 DPC 的完整执行过程。</b>
+</p>
 
-![Language](https://img.shields.io/badge/Language-MATLAB-orange)
-![License](https://img.shields.io/badge/License-Apache--2.0-blue)
-![Status](https://img.shields.io/badge/Status-Demo-brightgreen)
+<p align="center">
+  <img alt="Language" src="https://img.shields.io/badge/Language-MATLAB-orange?style=flat-square">
+  <img src="https://img.shields.io/github/repo-size/LiMingKuan-UESTC/Clustering-Matlab-Demo?style=flat-square&label=Repo%20Size" />
+  <a href="https://github.com/LiMingKuan-UESTC/Clustering-Matlab-Demo/stargazers">
+    <img src="https://img.shields.io/github/stars/LiMingKuan-UESTC/Clustering-Matlab-Demo?style=flat-square&logo=github&label=Stars" />
+  </a>
+</p>
 
 本项目主要面向算法入门、课堂展示和课程实验场景，希望通过交互式动画展示密度峰值聚类的关键步骤，帮助理解局部密度 `rho`、相对距离 `delta`、决策图以及样本归属过程，而不是一开始就堆叠复杂公式和理论说明。
 
@@ -13,38 +19,6 @@
 ![Density Peaks Clustering MATLAB Demo](assets/display.gif)
 
 ---
-
-## 项目亮点
-
-* **完整演示 DPC 聚类流程**
-  从原始样本、截断距离 `dc`、局部密度 `rho`、相对距离 `delta` 到决策图、中心选择和样本分配，逐步展示密度峰值聚类的完整过程。
-
-* **支持逐步播放与自动演示**
-  支持上一步、下一步、自动播放、暂停和重置，可以按照教学节奏观察每一个算法阶段。
-
-* **决策图与样本空间同步展示**
-  主视图展示二维样本分布，右侧同步展示距离矩阵、密度排序、相对距离排序以及 `rho-delta` 决策图。
-
-* **样本归属过程直观可见**
-  非中心样本按照局部密度从高到低依次分配，并通过连线展示当前样本与其最近高密度邻居之间的关系。
-
-* **支持修改聚类参数**
-  可以在界面中修改聚类中心数量 `K` 和截断距离百分位 `dc%`，并重新计算聚类结果。
-
-* **自动选择聚类中心**
-  本 Demo 使用 `gamma = rho × delta` 对样本进行排序，并选取 `gamma` 最大的前 `K` 个样本作为聚类中心。
-
-* **单文件即可运行**
-  当前核心功能集中在 `demo.m` 中，下载后可以直接运行，便于查看、修改和二次开发。
-
-* **不依赖 Statistics and Machine Learning Toolbox**
-  样本距离矩阵、局部密度计算、中心选择和样本分配过程均为手写实现，更适合学习算法流程与代码逻辑。
-
-* **提供非 GUI 自检模式**
-  可以通过命令行运行自检，检查距离矩阵、聚类中心、样本标签和分配结果是否正常。
-
-* **中文界面与中文注释**
-  对中文学习者更友好，适合课程作业、实验报告、算法入门和课堂演示。
 
 ## 算法演示流程
 
@@ -167,3 +141,8 @@ gamma = rho .* delta;
 本项目基于 Apache-2.0 License 开源。
 
 欢迎 Star ⭐ 和 Fork！
+
+## 相关项目
+
+* [K-Means-Clustering-Demo](https://github.com/LiMingKuan-UESTC/K-Means-Clustering-Demo)
+* [Clustering Matlab Demo](https://github.com/LiMingKuan-UESTC/Clustering-Matlab-Demo)
